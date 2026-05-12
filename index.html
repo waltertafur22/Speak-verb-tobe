@@ -1456,7 +1456,7 @@ function startMatching(){
   matchPairs = {};
   const items = shuffle([...MATCH_DATA]).slice(0,5);
   const leftItems  = items.map((it,i)=>({...it, id:'L'+i}));
-  const rightItems = shuffle(items.map((it,i)=>({...it, id:'R'+i}));
+  const rightItems = shuffle(items.map((it,i)=>({...it, id:'R'+i})));
 
   const leftCol  = document.getElementById('match-left');
   const rightCol = document.getElementById('match-right');
